@@ -7,11 +7,11 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <PropertyGroup>
-    <PackageId>CryptoClients.Net</PackageId>
+    <PackageId>Lgd.CryptoClients.Net</PackageId>
     <Authors>JKorf</Authors>
-    <PackageVersion>2.8.0</PackageVersion>
-    <AssemblyVersion>2.8.0</AssemblyVersion>
-    <FileVersion>2.8.0</FileVersion>
+    <PackageVersion>2.8.5</PackageVersion>
+    <AssemblyVersion>2.8.5</AssemblyVersion>
+    <FileVersion>2.8.5</FileVersion>
     <Description>CryptoClients.Net is a collection of multiple cryptocurrency exchange API clients for accessing both the REST API's and WebSocket API's. Supports order and account management and requesting and streaming both public and private data.</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageTags>CryptoClients;CryptoClients.Net;OKX;OKX.Net;Mexc;Mexc.Net;Kucoin;Kucoin.Net;Kraken;Kraken.Net;Huobi;Huobi.Net;HTX;HTX.Net;CoinEx;CoinEx.Net;Bybit;Bybit.Net;Bitget;Bitget.Net;Bitfinex;Bitfinex.Net;BingX;BingX.Net;Binance;Binance.Net;GateIo.Net;Gate.io;BitMart;BitMart.Net;CryptoCurrency;CryptoCurrency Exchange</PackageTags>
@@ -49,7 +49,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Binance.Net" Version="10.15.0" />
+    <PackageReference Include="Lgd.Binance.Net" Version="10.15.5" />
     <PackageReference Include="Bitfinex.Net" Version="7.13.0" />
     <PackageReference Include="BitMart.Net" Version="1.12.0" />
     <PackageReference Include="Bybit.Net" Version="3.19.0" />
@@ -60,7 +60,7 @@
     <PackageReference Include="JK.BingX.Net" Version="1.19.0" />
     <PackageReference Include="JK.Bitget.Net" Version="1.19.0" />
     <PackageReference Include="JK.Mexc.Net" Version="1.15.0" />
-    <PackageReference Include="JK.OKX.Net" Version="2.14.0" />
+    <PackageReference Include="Lgd.OKX.Net" Version="2.14.5" />
     <PackageReference Include="JKorf.Coinbase.Net" Version="1.7.0" />
     <PackageReference Include="JKorf.HTX.Net" Version="6.8.0" />
     <PackageReference Include="KrakenExchange.Net" Version="5.5.0" />
