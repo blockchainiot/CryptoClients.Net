@@ -1,6 +1,7 @@
 ﻿using Bitget.Net.Objects;
 using BitMart.Net.Objects;
 using CryptoExchange.Net.Authentication;
+using DeepCoin.Net.Objects;
 using Kucoin.Net.Objects;
 using OKX.Net.Objects;
 
@@ -37,6 +38,11 @@ namespace CryptoClients.Net.Models
         public BitMartApiCredentials? BitMart { get; set; }
 
         /// <summary>
+        /// BitMEX API credentials
+        /// </summary>
+        public ApiCredentials? BitMEX { get; set; }
+
+        /// <summary>
         /// Bybit API credentials
         /// </summary>
         public ApiCredentials? Bybit { get; set; }
@@ -57,6 +63,11 @@ namespace CryptoClients.Net.Models
         public ApiCredentials? CryptoCom { get; set; }
 
         /// <summary>
+        /// DeepCoin API credentials
+        /// </summary>
+        public DeepCoinApiCredentials? DeepCoin { get; set; }
+
+        /// <summary>
         /// Gate.io API credentials
         /// </summary>
         public ApiCredentials? GateIo { get; set; }
@@ -65,6 +76,11 @@ namespace CryptoClients.Net.Models
         /// HTX API credentials
         /// </summary>
         public ApiCredentials? HTX { get; set; }
+
+        /// <summary>
+        /// HyperLiquid API credentials
+        /// </summary>
+        public ApiCredentials? HyperLiquid { get; set; }
 
         /// <summary>
         /// Kraken API credentials

@@ -3,12 +3,15 @@ using BingX.Net;
 using Bitfinex.Net;
 using Bitget.Net;
 using BitMart.Net;
+using BitMEX.Net;
 using Bybit.Net;
 using Coinbase.Net;
 using CoinEx.Net;
 using CryptoCom.Net;
+using DeepCoin.Net;
 using GateIo.Net;
 using HTX.Net;
+using HyperLiquid.Net;
 using Kraken.Net;
 using Kucoin.Net;
 using Mexc.Net;
@@ -46,6 +49,10 @@ namespace CryptoClients.Net.Enums
         /// </summary>
         public static string BitMart => BitMartExchange.ExchangeName;
         /// <summary>
+        /// BitMEX
+        /// </summary>
+        public static string BitMEX => BitMEXExchange.ExchangeName;
+        /// <summary>
         /// Bybit
         /// </summary>
         public static string Bybit => BybitExchange.ExchangeName;
@@ -62,6 +69,10 @@ namespace CryptoClients.Net.Enums
         /// </summary>
         public static string CryptoCom => CryptoComExchange.ExchangeName;
         /// <summary>
+        /// DeepCoin
+        /// </summary>
+        public static string DeepCoin => DeepCoinExchange.ExchangeName;
+        /// <summary>
         /// Gate.io
         /// </summary>
         public static string GateIo => GateIoExchange.ExchangeName;
@@ -69,6 +80,10 @@ namespace CryptoClients.Net.Enums
         /// HTX
         /// </summary>
         public static string HTX => HTXExchange.ExchangeName;
+        /// <summary>
+        /// HyperLiquid
+        /// </summary>
+        public static string HyperLiquid => HyperLiquidExchange.ExchangeName;
         /// <summary>
         /// Kraken
         /// </summary>
@@ -104,12 +119,15 @@ namespace CryptoClients.Net.Enums
             Bitfinex,
             Bitget,
             BitMart,
+            BitMEX,
             Bybit,
             Coinbase,
             CoinEx,
             CryptoCom,
+            DeepCoin,
             GateIo,
             HTX,
+            HyperLiquid,
             Kraken,
             Kucoin,
             Mexc,

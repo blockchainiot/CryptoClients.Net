@@ -3,6 +3,7 @@ using BingX.Net.Interfaces;
 using Bitfinex.Net.Interfaces;
 using Bitget.Net.Interfaces;
 using BitMart.Net.Interfaces;
+using BitMEX.Net.Interfaces;
 using Bybit.Net.Interfaces;
 using Coinbase.Net.Interfaces;
 using CoinEx.Net.Interfaces;
@@ -10,8 +11,10 @@ using CryptoCom.Net.Interfaces;
 using CryptoExchange.Net.SharedApis;
 using CryptoExchange.Net.Trackers.Klines;
 using CryptoExchange.Net.Trackers.Trades;
+using DeepCoin.Net.Interfaces;
 using GateIo.Net.Interfaces;
 using HTX.Net.Interfaces;
+using HyperLiquid.Net.Interfaces;
 using Kraken.Net.Interfaces;
 using Kucoin.Net.Interfaces;
 using Mexc.Net.Interfaces;
@@ -48,6 +51,10 @@ namespace CryptoClients.Net.Interfaces
         /// </summary>
         IBitMartTrackerFactory BitMart { get; }
         /// <summary>
+        /// BitMEX tracker factory
+        /// </summary>
+        IBitMEXTrackerFactory BitMEX { get; }
+        /// <summary>
         /// Bybit tracker factory
         /// </summary>
         IBybitTrackerFactory Bybit { get; }
@@ -64,6 +71,10 @@ namespace CryptoClients.Net.Interfaces
         /// </summary>
         ICryptoComTrackerFactory CryptoCom { get; }
         /// <summary>
+        /// DeepCoin tracker factory
+        /// </summary>
+        IDeepCoinTrackerFactory DeepCoin { get; }
+        /// <summary>
         /// Gate.io tracker factory
         /// </summary>
         IGateIoTrackerFactory GateIo { get; }
@@ -71,6 +82,10 @@ namespace CryptoClients.Net.Interfaces
         /// HTX tracker factory
         /// </summary>
         IHTXTrackerFactory HTX { get; }
+        /// <summary>
+        /// HyperLiquid tracker factory
+        /// </summary>
+        IHyperLiquidTrackerFactory HyperLiquid { get; }
         /// <summary>
         /// Kraken tracker factory
         /// </summary>

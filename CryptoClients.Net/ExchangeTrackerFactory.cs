@@ -4,6 +4,7 @@ using Bitfinex.Net.Interfaces;
 using Bitget.Net.Enums;
 using Bitget.Net.Interfaces;
 using BitMart.Net.Interfaces;
+using BitMEX.Net.Interfaces;
 using Bybit.Net.Interfaces;
 using Coinbase.Net.Interfaces;
 using CoinEx.Net.Interfaces;
@@ -13,8 +14,10 @@ using CryptoExchange.Net.Interfaces;
 using CryptoExchange.Net.SharedApis;
 using CryptoExchange.Net.Trackers.Klines;
 using CryptoExchange.Net.Trackers.Trades;
+using DeepCoin.Net.Interfaces;
 using GateIo.Net.Interfaces;
 using HTX.Net.Interfaces;
+using HyperLiquid.Net.Interfaces;
 using Kraken.Net.Interfaces;
 using Kucoin.Net.Interfaces;
 using Mexc.Net.Interfaces;
@@ -40,6 +43,8 @@ namespace CryptoClients.Net
         /// <inheritdoc />
         public IBitMartTrackerFactory BitMart { get; }
         /// <inheritdoc />
+        public IBitMEXTrackerFactory BitMEX { get; }
+        /// <inheritdoc />
         public IBybitTrackerFactory Bybit { get; }
         /// <inheritdoc />
         public ICoinbaseTrackerFactory Coinbase { get; }
@@ -48,9 +53,13 @@ namespace CryptoClients.Net
         /// <inheritdoc />
         public ICryptoComTrackerFactory CryptoCom { get; }
         /// <inheritdoc />
+        public IDeepCoinTrackerFactory DeepCoin { get; }
+        /// <inheritdoc />
         public IGateIoTrackerFactory GateIo { get; }
         /// <inheritdoc />
         public IHTXTrackerFactory HTX { get; }
+        /// <inheritdoc />
+        public IHyperLiquidTrackerFactory HyperLiquid { get; }
         /// <inheritdoc />
         public IKrakenTrackerFactory Kraken { get; }
         /// <inheritdoc />
@@ -73,12 +82,15 @@ namespace CryptoClients.Net
             IBitfinexTrackerFactory bitfinex,
             IBitgetTrackerFactory bitget,
             IBitMartTrackerFactory bitMart,
+            IBitMEXTrackerFactory bitMEX,
             IBybitTrackerFactory bybit,
             ICoinbaseTrackerFactory coinbase,
             ICoinExTrackerFactory coinEx,
             ICryptoComTrackerFactory cryptoCom,
+            IDeepCoinTrackerFactory deepCoin,
             IGateIoTrackerFactory gateIo,
             IHTXTrackerFactory htx,
+            IHyperLiquidTrackerFactory hyperLiquid,
             IKrakenTrackerFactory kraken,
             IKucoinTrackerFactory kucoin,
             IMexcTrackerFactory mexc,
@@ -91,12 +103,15 @@ namespace CryptoClients.Net
             Bitfinex = bitfinex;
             Bitget = bitget;
             BitMart = bitMart;
+            BitMEX = bitMEX;
             Bybit = bybit;
             Coinbase = coinbase;
             CoinEx = coinEx;
             CryptoCom = cryptoCom;
+            DeepCoin = deepCoin;
             GateIo = gateIo;
             HTX = htx;
+            HyperLiquid = hyperLiquid;
             Kraken = kraken;
             Kucoin = kucoin;
             Mexc = mexc;
@@ -121,6 +136,9 @@ namespace CryptoClients.Net
                     return Bitget.CreateKlineTracker(symbol, interval, limit, period);
                 case "BitMart":
                     return BitMart.CreateKlineTracker(symbol, interval, limit, period);
+                case "BitMEX":
+                    // No tracker available
+                    return null;
                 case "Bybit":
                     return Bybit.CreateKlineTracker(symbol, interval, limit, period);
                 case "Coinbase":
@@ -130,10 +148,14 @@ namespace CryptoClients.Net
                     return null;
                 case "CryptoCom":
                     return CryptoCom.CreateKlineTracker(symbol, interval, limit, period);
+                case "DeepCoin":
+                    return DeepCoin.CreateKlineTracker(symbol, interval, limit, period);
                 case "GateIo":
                     return GateIo.CreateKlineTracker(symbol, interval, limit, period);
                 case "HTX":
                     return HTX.CreateKlineTracker(symbol, interval, limit, period);
+                case "HyperLiquid":
+                    return HyperLiquid.CreateKlineTracker(symbol, interval, limit, period);
                 case "Kraken":
                     return Kraken.CreateKlineTracker(symbol, interval, limit, period);
                 case "Kucoin":
@@ -168,6 +190,8 @@ namespace CryptoClients.Net
                     return Bitget.CreateTradeTracker(symbol, limit, period);
                 case "BitMart":
                     return BitMart.CreateTradeTracker(symbol, limit, period);
+                case "BitMEX":
+                    return BitMEX.CreateTradeTracker(symbol, limit, period);
                 case "Bybit":
                     return Bybit.CreateTradeTracker(symbol, limit, period);
                 case "Coinbase":
@@ -176,10 +200,14 @@ namespace CryptoClients.Net
                     return CoinEx.CreateTradeTracker(symbol, limit, period);
                 case "CryptoCom":
                     return CryptoCom.CreateTradeTracker(symbol, limit, period);
+                case "DeepCoin":
+                    return DeepCoin.CreateTradeTracker(symbol, limit, period);
                 case "GateIo":
                     return GateIo.CreateTradeTracker(symbol, limit, period);
                 case "HTX":
                     return HTX.CreateTradeTracker(symbol, limit, period);
+                case "HyperLiquid":
+                    return HyperLiquid.CreateTradeTracker(symbol, limit, period);
                 case "Kraken":
                     return Kraken.CreateTradeTracker(symbol, limit, period);
                 case "Kucoin":

@@ -3,14 +3,17 @@ using BingX.Net.Interfaces;
 using Bitfinex.Net.Interfaces;
 using Bitget.Net.Interfaces;
 using BitMart.Net.Interfaces;
+using BitMEX.Net.Interfaces;
 using Bybit.Net.Interfaces;
 using Coinbase.Net.Interfaces;
 using CoinEx.Net.Interfaces;
 using CryptoCom.Net.Interfaces;
 using CryptoExchange.Net.Interfaces;
 using CryptoExchange.Net.SharedApis;
+using DeepCoin.Net.Interfaces;
 using GateIo.Net.Interfaces;
 using HTX.Net.Interfaces;
+using HyperLiquid.Net.Interfaces;
 using Kraken.Net.Interfaces;
 using Kucoin.Net.Interfaces;
 using Mexc.Net.Interfaces;
@@ -46,6 +49,10 @@ namespace CryptoClients.Net.Interfaces
         /// </summary>
         IBitMartOrderBookFactory BitMart { get; }
         /// <summary>
+        /// BitMEX order book factory
+        /// </summary>
+        IBitMEXOrderBookFactory BitMEX { get; }
+        /// <summary>
         /// Bybit order book factory
         /// </summary>
         IBybitOrderBookFactory Bybit { get; }
@@ -62,6 +69,10 @@ namespace CryptoClients.Net.Interfaces
         /// </summary>
         ICryptoComOrderBookFactory CryptoCom { get; }
         /// <summary>
+        /// DeepCoin order book factory
+        /// </summary>
+        IDeepCoinOrderBookFactory DeepCoin { get; }
+        /// <summary>
         /// Gate.io order book factory
         /// </summary>
         IGateIoOrderBookFactory GateIo { get; }
@@ -69,6 +80,10 @@ namespace CryptoClients.Net.Interfaces
         /// HTX order book factory
         /// </summary>
         IHTXOrderBookFactory HTX { get; }
+        /// <summary>
+        /// HyperLiquid order book factory
+        /// </summary>
+        IHyperLiquidOrderBookFactory HyperLiquid { get; }
         /// <summary>
         /// Kraken order book factory
         /// </summary>

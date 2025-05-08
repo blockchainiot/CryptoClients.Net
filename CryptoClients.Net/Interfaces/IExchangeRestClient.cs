@@ -3,14 +3,17 @@ using BingX.Net.Interfaces.Clients;
 using Bitfinex.Net.Interfaces.Clients;
 using Bitget.Net.Interfaces.Clients;
 using BitMart.Net.Interfaces.Clients;
+using BitMEX.Net.Interfaces.Clients;
 using Bybit.Net.Interfaces.Clients;
 using Coinbase.Net.Interfaces.Clients;
 using CoinEx.Net.Interfaces.Clients;
 using CryptoCom.Net.Interfaces.Clients;
 using CryptoExchange.Net.Interfaces.CommonClients;
 using CryptoExchange.Net.SharedApis;
+using DeepCoin.Net.Interfaces.Clients;
 using GateIo.Net.Interfaces.Clients;
 using HTX.Net.Interfaces.Clients;
+using HyperLiquid.Net.Interfaces.Clients;
 using Kraken.Net.Interfaces.Clients;
 using Kucoin.Net.Interfaces.Clients;
 using Mexc.Net.Interfaces.Clients;
@@ -49,6 +52,10 @@ namespace CryptoClients.Net.Interfaces
         /// </summary>
         IBitMartRestClient BitMart { get; }
         /// <summary>
+        /// BitMEX REST API
+        /// </summary>
+        IBitMEXRestClient BitMEX { get; }
+        /// <summary>
         /// Bybit REST API
         /// </summary>
         IBybitRestClient Bybit { get; }
@@ -65,6 +72,10 @@ namespace CryptoClients.Net.Interfaces
         /// </summary>
         ICryptoComRestClient CryptoCom { get; }
         /// <summary>
+        /// DeepCoin REST API
+        /// </summary>
+        IDeepCoinRestClient DeepCoin { get; }
+        /// <summary>
         /// Gate.io REST API
         /// </summary>
         IGateIoRestClient GateIo { get; }
@@ -72,6 +83,10 @@ namespace CryptoClients.Net.Interfaces
         /// HTX REST API
         /// </summary>
         IHTXRestClient HTX { get; }
+        /// <summary>
+        /// HyperLiquid REST API
+        /// </summary>
+        IHyperLiquidRestClient HyperLiquid { get; }
         /// <summary>
         /// Kraken REST API
         /// </summary>
@@ -122,6 +137,14 @@ namespace CryptoClients.Net.Interfaces
         /// <param name="apiSecret">API secret</param>
         /// <param name="apiPass">API passphrase</param>
         void SetApiCredentials(string exchange, string apiKey, string apiSecret, string? apiPass = null);
+
+        /// <summary>
+        /// Return the exchange symbol name
+        /// </summary>
+        /// <param name="exchange">Exchange</param>
+        /// <param name="symbol">Symbol</param>
+        /// <returns></returns>
+        string? GetSymbolName(string exchange, SharedSymbol symbol);
 
         /// <summary>
         /// Get the <see cref="IAssetsRestClient"/> clients for all exchanges

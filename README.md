@@ -5,7 +5,7 @@
 CryptoClients.Net is a collection of different cryptocurrency exchange client libraries based on the same [base library](https://jkorf.github.io/CryptoExchange.Net/). CryptoClients.Net bundles the different client libraries in a single package and adds some additional tools to make use of them.
 
 ## Features
-* Direct full access to 16 different exchanges, public and private data
+* Direct full access to 18 different CEX's and 1 DEX, public and private data
 * Client per exchange, or single client for accessing all exchanges
 * Response data is mapped to descriptive models
 * Input parameters and response values are mapped to discriptive enum values where possible
@@ -40,13 +40,16 @@ The following API's are included in CryptoClients.Net:
 |Bitfinex|[JKorf/Bitfinex.Net](https://github.com/JKorf/Bitfinex.Net)|[![Nuget version](https://img.shields.io/nuget/v/Bitfinex.net.svg?style=flat-square)](https://www.nuget.org/packages/Bitfinex.Net)|
 |Bitget|[JKorf/Bitget.Net](https://github.com/JKorf/Bitget.Net)|[![Nuget version](https://img.shields.io/nuget/v/JK.Bitget.net.svg?style=flat-square)](https://www.nuget.org/packages/JK.Bitget.Net)|
 |BitMart|[JKorf/BitMart.Net](https://github.com/JKorf/BitMart.Net)|[![Nuget version](https://img.shields.io/nuget/v/BitMart.net.svg?style=flat-square)](https://www.nuget.org/packages/BitMart.Net)|
+|BitMEX|[JKorf/BitMEX.Net](https://github.com/JKorf/BitMEX.Net)|[![Nuget version](https://img.shields.io/nuget/v/JKorf.BitMEX.net.svg?style=flat-square)](https://www.nuget.org/packages/JKorf.BitMEX.Net)|
 |Bybit|[JKorf/Bybit.Net](https://github.com/JKorf/Bybit.Net)|[![Nuget version](https://img.shields.io/nuget/v/Bybit.net.svg?style=flat-square)](https://www.nuget.org/packages/Bybit.Net)|
 |Coinbase|[JKorf/Coinbase.Net](https://github.com/JKorf/Coinbase.Net)|[![Nuget version](https://img.shields.io/nuget/v/JKorf.Coinbase.net.svg?style=flat-square)](https://www.nuget.org/packages/JKorf.Coinbase.Net)|
 |CoinEx|[JKorf/CoinEx.Net](https://github.com/JKorf/CoinEx.Net)|[![Nuget version](https://img.shields.io/nuget/v/CoinEx.net.svg?style=flat-square)](https://www.nuget.org/packages/CoinEx.Net)|
 |CoinGecko|[JKorf/CoinGecko.Net](https://github.com/JKorf/CoinGecko.Net)|[![Nuget version](https://img.shields.io/nuget/v/CoinGecko.net.svg?style=flat-square)](https://www.nuget.org/packages/CoinGecko.Net)|
 |Crypto.com|[JKorf/CryptoCom.Net](https://github.com/JKorf/CryptoCom.Net)|[![Nuget version](https://img.shields.io/nuget/v/CryptoCom.net.svg?style=flat-square)](https://www.nuget.org/packages/CryptoCom.Net)|
+|DeepCoin|[JKorf/DeepCoin.Net](https://github.com/JKorf/DeepCoin.Net)|[![Nuget version](https://img.shields.io/nuget/v/DeepCoin.net.svg?style=flat-square)](https://www.nuget.org/packages/DeepCoin.Net)|
 |Gate.io|[JKorf/GateIo.Net](https://github.com/JKorf/GateIo.Net)|[![Nuget version](https://img.shields.io/nuget/v/GateIo.net.svg?style=flat-square)](https://www.nuget.org/packages/GateIo.Net)|
 |HTX|[JKorf/HTX.Net](https://github.com/JKorf/HTX.Net)|[![Nuget version](https://img.shields.io/nuget/v/JKorf.HTX.net.svg?style=flat-square)](https://www.nuget.org/packages/JKorf.HTX.Net)|
+|HyperLiquid|[JKorf/HyperLiquid.Net](https://github.com/JKorf/HyperLiquid.Net)|[![Nuget version](https://img.shields.io/nuget/v/HyperLiquid.net.svg?style=flat-square)](https://www.nuget.org/packages/HyperLiquid.Net)|
 |Kraken|[JKorf/Kraken.Net](https://github.com/JKorf/Kraken.Net)|[![Nuget version](https://img.shields.io/nuget/v/KrakenExchange.net.svg?style=flat-square)](https://www.nuget.org/packages/KrakenExchange.Net)|
 |Kucoin|[JKorf/Kucoin.Net](https://github.com/JKorf/Kucoin.Net)|[![Nuget version](https://img.shields.io/nuget/v/Kucoin.net.svg?style=flat-square)](https://www.nuget.org/packages/Kucoin.Net)|
 |Mexc|[JKorf/Mexc.Net](https://github.com/JKorf/Mexc.Net)|[![Nuget version](https://img.shields.io/nuget/v/JK.Mexc.net.svg?style=flat-square)](https://www.nuget.org/packages/JK.Mexc.Net)|
@@ -208,6 +211,24 @@ A Discord server is available [here](https://discord.gg/MSpeEtSY8t). Feel free t
 ## Support the project
 Any support is greatly appreciated.
 
+## Referral
+When creating an account on new exchanges please consider using a referral link from below to support development
+
+|Exchange|Link|
+|--|--|
+|Bybit|[https://partner.bybit.com/b/jkorf](https://partner.bybit.com/b/jkorf)|
+|Coinbase|[https://advanced.coinbase.com/join/T6H54H8](https://advanced.coinbase.com/join/T6H54H8)|
+|CoinEx|[https://www.coinex.com/register?refer_code=hd6gn](https://www.coinex.com/register?refer_code=hd6gn)|
+|Crypto.com|[https://crypto.com/exch/26ge92xbkn](https://crypto.com/exch/26ge92xbkn)|
+|DeepCoin|[https://s.deepcoin.com/jddhfca)|
+|HTX|[https://www.htx.com/invite/en-us/1f?invite_code=fxp9](https://www.htx.com/invite/en-us/1f?invite_code=fxp9)|
+|HyperLiquid|[https://app.hyperliquid.xyz/join/JKORF](https://app.hyperliquid.xyz/join/JKORF)|
+|Kucoin|[https://www.kucoin.com/r/rf/QBS4FPED](https://www.kucoin.com/r/rf/QBS4FPED)|
+|OKX|[https://okx.com/join/48046699](https://okx.com/join/48046699)|
+|WhiteBit|[https://whitebit.com/referral/a8e59b59-186c-4662-824c-3095248e0edf](https://whitebit.com/referral/a8e59b59-186c-4662-824c-3095248e0edf)|
+|XT|[https://www.xt.com/en/accounts/register?ref=1HRM5J](https://www.xt.com/en/accounts/register?ref=1HRM5J)|
+
+
 ### Donate
 Make a one time donation in a crypto currency of your choice. If you prefer to donate a currency not listed here please contact me.
 
@@ -219,6 +240,440 @@ Make a one time donation in a crypto currency of your choice. If you prefer to d
 Alternatively, sponsor me on Github using [Github Sponsors](https://github.com/sponsors/JKorf). 
 
 ## Release notes
+* Version 2.14.0 - 28 Mar 2025
+  * Updated Binance.Net from version 10.18.0 to version 10.19.0
+    * Added quoteAsset parameter to restClient.SpotApi.Account.GetWalletBalancesAsync endpoint
+    * Added Denomination property to restClient.SpotApi.Account.GetUserAssetsAsync response model
+    * Updated SimpleEarn locked response models
+    * Updated request weight of restClient.SpotApi.ExchangeData.GetAggregatedTradeHistoryAsync to 4
+  * Updated Bitget.Net from version 1.21.0 to version 1.22.1
+    * Added demo trading environment
+    * Added restClient.FuturesApiV2.ExchangeData.GetOiLimitsAsync endpoint
+    * Added CrossRiskRate and UnrealizedPnl properties to futures balance websocket update model
+    * Added missing Trigger Order Plan Type Enum values
+    * Fixed ProductType parsing for shared socket subscriptions
+  * Updated BitMart.Net from version 1.14.0 to version 1.15.1
+    * Added stpMode parameter to restClient.UsdFuturesApi.Trading.PlaceOrderAsync endpoint
+    * Added restClient.UsdFuturesApi.Trading.EditOrderAsync endpoint
+    * Added ReceiveWindow Rest client option for signed requests
+  * Updated Bybit.Net from version 4.3.2 to version 4.4.1
+    * Added socketClient.V5PrivateApi.PlaceMultipleOrdersAsync, EditMultipleOrdersAsync and CancelMultipleOrdersAsync requests
+    * Added SlippageTolerance support for orders
+    * Removed incorrect id parameters checks from some endpoints
+  * Updated Coinbase.Net from version 1.8.1 to version 1.9.1
+    * Fixed deserialization issue for restClient.AdvancedTradeApi.Account.GetPerpetualPortfolioSummaryAsync
+  * Updated GateIo.Net from version 1.21.0 to version 1.22.0
+    * Added BaseAssetName and QuoteAssetName to GateIoSymbol model
+    * Added MarketId property to GateIoTradeUpdate and GateIoUserTradeUpdate models
+    * Added socketClient.PerpetualFuturesApi.SubscribeToContractStatsUpdatesAs…ync subscription
+    * Fixed shared PerpetualFuturesApi GetBalances returning error
+  * Updated HTX.Net from version 6.9.0 to version 6.9.1
+    * Added QuoteQuantity to socketClient.SpotApi.SubscribeToOrderUpdatesAsync canceled order update
+    * Fixed restClient.SpotApi.Trading.CancelAllOrdersAsync endpoint
+    * Fixed shared client balance subscription updates
+  * Updated HyperLiquid.Net from version 1.1.0 to version 1.1.2
+    * Fixed deserialization of spot exchange info
+    * Fixed testnet support
+  * Updated Kucoin.Net from version 6.0.1 to version 6.1.0
+    * Added restClient.SpotApi.HfTrading.GetOpenOrdersV2Async endpoint
+    * Added TransactionId property to KucoinUserTrade model
+    * Added missing value to BizType enum
+    * Fixed some values for restClient.SpotApi.Account.GetAccountLedgersAsync bizType parameter
+    * Fixed deserialization issue for restClient.SpotApi.Account.GetAccountLedgersAsync
+  * Updated OKX.Net from version 2.15.1 to version 2.16.0
+    * Added restClient.UnifiedApi.ExchangeData.GetEstimatedFuturesSettlementPriceAsync endpoint
+    * Added restClient.UnifiedApi.ExchangeData.GetSettlementHistoryAsync endpoint
+    * Added settlement biz type enums values
+    * Added NonSettlementEntryPrice and SettledPnl to OKXPosition model
+    * Added FutureSettlement property to OKXInstrument model
+    * Added ThirdQuarter to InstrumentAlias enum values
+    * Correctly set update type to snapshot for account and position socket updates
+  * Updated WhiteBit.Net from version 1.4.0 to version 1.5.0
+    * Added clientOrderId parameter to restClient.V4Api.Trading.CancelOrderAsync, renamed id to orderId and made it optional
+    * Added WhiteBitNonceProvider
+    * Updated restClient.V4Api.Trading.EditOrderAsync to support by clientOrderId
+
+* Version 2.13.2 - 07 Mar 2025
+  * Updated DeepCoin.Net from version 1.0.2 to version 1.0.5
+    * Fixed Volume and QuoteVolume properties being inversed on DeepCoinTicker model
+    * Fixed DeepCoinOrderBookFactory Create with SharedSymbol parameter not formatting correctly
+    * Fixed handling websocket order book updates with the same sequence number split over 2 messages
+    * Fixed restClient.ExchangeApi.Account.KeepAliveUserStreamAsync endpoint
+  * Updated GateIo.Net from version 1.20.1 to version 1.21.0
+    * Added Networks info to GateIoAsset model
+    * Updated shared rest GetAssetsAsync request with network info
+  * Updated Kucoin.Net from version 6.0.0 to version 6.0.1
+    * Fix restClient.SpotApi.Account.GetAccountsAsync accountType parameter serialization
+  * Updated OKX.Net from version 2.15.0 to version 2.15.1
+    * Fixed internal exception when receiving empty snapshot update in socketClient.UnifiedApi.Trading.SubscribeToPositionUpdatesAsync
+
+* Version 2.13.1 - 04 Mar 2025
+    * Updated DeepCoin.Net to version 1.0.2 to fix spot subscription issue
+
+* Version 2.13.0 - 04 Mar 2025
+  * Added DeepCoin support with DeepCoin.Net 1.0.1
+  * Added GetSymbolName helper method on clients
+  * Updated Binance.Net from version 10.17.0 to version 10.18.0
+    * Added Coin-M websocket Trade API implementation
+    * Added SOL staking endpoints to restClient.GeneralApi.Staking
+    * Added orderId parameter to Spot.GetMarginUserTradesAsync
+    * Updated futures GetTradeHistoryAsync max limit value from 1000 to 500
+    * Fixed API doc references for endpoints and subscriptions
+    * Fixed various spelling mistakes
+  * Updated BitMart.Net from version 1.13.0 to version 1.14.0
+    * Added restClient.SpotApi.Account.GetWithdrawalAddressesAsync endpoint
+    * Added startTime/endTime filter to restClient.SpotApi.Account.GetDepositHistoryAsync and GetWithdrawalHistoryAsync
+    * Added needUsdValuation to restClient.SpotApi.Account.GetFundingBalancesAsync endpoint
+    * Added asset parameter to restClient.SpotApi.ExchangeData.GetAssetDepositWithdrawInfoAsync endpoint
+    * Added restClient.UsdFuturesApi.ExchangeData.GetMarkKlinesAsync endpoint
+    * Added socketClient.UsdFuturesApi.SubscribeToMarkKlineUpdatesAsync subscription
+    * Added symbol specific overloads for socketClient.UsdFuturesApi.SubscribeToTickerUpdatesAsync subscription
+  * Updated Bybit.Net from version 4.1.0 to version 4.3.2
+    * Added restClient.V5Api.ExchangeData.GetSpotMarginTieredCollateralRatioAsync endpoint
+    * Added restClient.V5Api.Account.GetTransferableAsync multi-asset overload and updated response model
+    * Added quoteAsset parameter to restClient.V5Api.ExchangeData.GetHistoricalVolatilityAsync endpoint
+    * Added support for RPI (RetailPriceImprovement) orders and data
+    * Added Bybit Earn endpoints to restClient.V5Api.Earn
+    * Added socket SubscribeToAllLiquidationUpdatesAsync subscription
+    * Marked SubscribeToLiquidationUpdatesAsync as deprecated
+    * Fix for pagination in restClient.V5Api.SharedClient.GetKlinesAsync
+    * Fixed restClient.V5Api.CryptoLoan.BorrowAsync parameter serialization
+    * Fix for restClient.V5Api.CryptoLoan.GetOpenLoansAsync deserialization
+  * Updated CoinEx.Net from version 7.15.0 to version 8.0.1
+    * Added client side ratelimiter implementation
+    * Updated REST and WebSocket unit tests
+    * Updated REST requests to new CryptoExchange.Net implementation
+    * Updated various response models
+    * Fixed restClient.FuturesApi.Trading.CancelOrderByClientOrderIdAsync response model
+    * Fixed restClient.FuturesApi.Trading.CancelStopOrderByClientOrderIdAsync response model
+    * Fixed restClient.SpotApi.Account.GetCreditAccountAsync response model
+    * Fixed restClient.SpotApi.Account.GetWithdrawalHistoryAsync status parameter
+    * Fixed exception in restClient.SpotApiV2.Account.GetAllDepositWithdrawalConfigsAsync when no credentials provided
+    * Removed V1 API
+  * Updated GateIo.Net from version 1.19.0 to version 1.20.1
+    * Added auto convert to lowercase for settlement asset parameter in futures endpoints and subscriptions
+    * Added overloads for multiple contracts to some public futures Subscribe methods
+    * Added socketClient.SpotApi.GetOrdersAsync query
+    * Added CancellationToken parameter for futures websocket queries
+    * Fixed websocket order operations always logging a warning message
+    * Fixed incorrect pricing parameters mapping for restClient.PerpetualFuturesApi.Trading.PlaceTriggerOrderAsync
+  * Updated Kucoin.Net from version 5.24.0 to version 6.0.0
+    * Updated library from Newtonsoft.Json to System.Text.Json for json (de)serialization
+    * Added USDC balance info to Futures API shared GetBalancesAsync
+    * Added restClient.SpotApi.Account.GetDepositAddressesV3Async endpoint
+    * Added restClient.SpotApi.Account.CreateDepositAddressV3Async endpoint
+    * Added restClient.SpotApi.ExchangeData.GetCallAuctionOrderBookAsync endpoint
+    * Added restClient.SpotApi.ExchangeData.GetCallAuctionInfoAsync endpoint
+    * Added socketClient.SpotApi.SubscribeToCallAuctionOrderBookUpdatesAsync endpoint
+    * Added socketClient.SpotApi.SubscribeToCallAuctionInfoUpdatesAsync endpoint
+    * Updated takeProfitPrice and stopLossPrice on restClient.FuturesApi.Trading.PlaceTpSlOrderAsync to triggerStopUpPrice and triggerStopDownPrice
+    * Updated KucoinSymbol response model with call auction info
+    * Updated Enum mappings
+    * Updated API documentation references to new API docs
+    * Removed no longer needed converters
+    * Renamed restClient.FuturesApi.ExchangeData.GetOpenContractsAsync to GetSymbolsAsync
+    * Renamed restClient.SpotApi.Margin.GetMarginTradingPairConfigurationAsync to GetSymbolsAsync
+    * Renamed socketClient.FuturesApi.SubscribeToTickerUpdatesAsync to SubscribeToBookTickerUpdatesAsync
+    * Renamed socketClient.FuturesApi.SubscribeToMarketUpdatesAsync to SubscribeToSymbolUpdatesAsync
+    * Renamed socketClient.FuturesApi.SubscribeToSystemAnnouncementsAsync to SubscribeToFundingFeeSettlementUpdatesAsync
+    * Renamed socketClient.FuturesApi.SubscribeTo24HourSnapshotUpdatesAsync to SubscribeTo24HTickerUpdatesAsync
+    * Removed deprecated restClient.FuturesApi.Account transfer endpoints
+    * Removed deprecated restClient.SpotApi.Account.InnerTransferAsync
+    * Removed deprecated restClient.SpotApi.Account.GetHistoricalDepositsAsync
+    * Removed deprecated restClient.SpotApi.Account.GetHistoricalWithdrawalsAsync
+    * Removed deprecated restClient.SpotApi.Account.GetDepositAddressAsync
+    * Removed deprecated restClient.SpotApi.Account.CreateDepositAddressAsync
+    * Removed deprecated socketClient.SpotApi.SubscribeToFundingBookUpdatesAsync
+  * Updated XT.Net from version 1.2.0 to version 1.2.1
+    * Fix for balance update deserialization error
+
+
+* Version 2.12.0 - 12 Feb 2025
+  * Updated reference CryptoExchange.Net version from 8.7.3 to 8.8.0
+    * Split DataEvent.Timestamp in DataEvent.ReceivedTime and DataEvent.DataTime
+    * Added SharedKlineInterval enum values
+    * Fixed exception when creating rest client for mono runtime
+    * Fixed some typos
+  * Updated Binance.Net from version 10.16.2 to version 10.17.0
+    * Added support for more SharedKlineInterval values
+    * Added setting of DataTime value on websocket DataEvent updates
+    * Added contract address and URL properties to BinanceUserAsset model
+    * Fix Mono runtime exception on rest client construction using DI
+  * Updated BingX.Net from version 1.20.1 to version 1.21.0
+    * Added support for more SharedKlineInterval values
+    * Added setting of DataTime value on websocket DataEvent updates
+    * Added Status property to restClient.PerpetualFuturesApi.Trading.PlaceOrderAsync response model
+    * Fix Mono runtime exception on rest client construction using DI
+  * Updated Bitfinex.Net from version 8.0.2 to version 8.1.1
+    * Added support for more SharedKlineInterval values
+    * Added setting of DataTime value on websocket DataEvent updates
+    * Fix Mono runtime exception on rest client construction using DI
+    * Fixed SharedSymbol formatting for assets with more than 3 characters in the name
+    * Fixed unnecessary unsubscribe call when subscribe is never confirmed
+  * Updated Bitget.Net from version 1.20.0 to version 1.21.0
+    * Added support for more SharedKlineInterval values
+    * Added setting of DataTime value on websocket DataEvent updates
+    * Added initial futures CopyTrader endpoints
+    * Updated BitgetFuturesTriggerOrder response model
+    * Fix Mono runtime exception on rest client construction using DI
+  * Updated BitMart.Net from version 1.12.2 to version 1.13.0
+    * Added support for more SharedKlineInterval values
+    * Added setting of DataTime value on websocket DataEvent updates
+    * Fix Mono runtime exception on rest client construction using DI
+  * Updated BitMEX.Net from version 1.0.0 to version 1.1.0
+    * Added setting of DataTime value on websocket DataEvent updates
+    * Added DisplayName and ImageUrl to BitMEXExchange class
+    * Fixed supported SharedKlineInterval not being specified correctly in the options
+    * Fix Mono runtime exception on rest client construction using DI
+  * Updated Bybit.Net from version 4.0.2 to version 4.1.0
+    * Added support for more SharedKlineInterval values
+    * Added setting of DataTime value on websocket DataEvent updates
+    * Fix Mono runtime exception on rest client construction using DI
+  * Updated Coinbase.Net from version 1.7.2 to version 1.8.1
+    * Added support for more SharedKlineInterval values
+    * Added setting of DataTime value on websocket DataEvent updates
+    * Added getTradabilityStatus parameter to GetSymbolsAsync method
+    * Renamed KlineInterval.TwoHour to KlineInterval.TwoHours, fixed int value
+    * Fixed missing value PreLaunch for SymbolStatus enum
+    * Fix Mono runtime exception on rest client construction using DI
+  * Updated CoinEx.Net from version 7.14.0 to version 7.15.0
+    * Added support for more SharedKlineInterval values
+    * Added setting of DataTime value on websocket DataEvent updates
+    * Fixed deserialization of CoinExBookPriceUpdate.UpdateTime property
+    * Fix Mono runtime exception on rest client construction using DI
+  * Updated CoinGecko.Net from version 3.3.1 to version 3.4.0
+    * Fix Mono runtime exception on rest client construction using DI
+  * Updated CryptoCom.Net from version 1.5.1 to version 1.6.0
+    * Added support for more SharedKlineInterval values
+    * Added setting of DataTime value on websocket DataEvent updates
+    * Fixed incorrect API docs references for subscription methods
+    * Fix Mono runtime exception on rest client construction using DI
+  * Updated GateIo.Net from version 1.18.0 to version 1.19.0
+    * Added support for more SharedKlineInterval values
+    * Added setting of DataTime value on websocket DataEvent updates
+    * Added actionMode parameter to restClient.SpotApi.Trading.PlaceOrderAsync endpoint and socketClient.SpotApi.PlaceOrderAsync
+    * Fix Mono runtime exception on rest client construction using DI
+    * Marked cross margin endpoints as deprecated
+  * Updated HTX.Net from version 6.8.2 to version 6.9.0
+    * Added support for more SharedKlineInterval values
+    * Added setting of DataTime value on websocket DataEvent updates
+    * Added UpdateTime to HTXOrder response model
+    * Added restClient.SpotApi.Trading.CancelAllOrdersAsync endpoint
+    * Added missing parameters to restClient.SpotApi.Trading.GetOpenOrdersAsync endpoint
+    * Added TotalTradeQuantity property to socketClient.SpotApi.SubscribeToOrderUpdatesAsync update model
+    * Added restClient.SpotApi.ExchangeData.GetFullOrderBookAsync endpoint
+    * Fix Mono runtime exception on rest client construction using DI
+  * Updated HyperLiquid.Net from version 1.0.1 to version 1.1.0
+    * Added support for more SharedKlineInterval values
+    * Added setting of DataTime value on websocket DataEvent updates
+    * Fix Mono runtime exception on rest client construction using DI
+  * Updated Kraken.Net from version 5.6.0 to version 5.7.1
+    * Added support for more SharedKlineInterval values
+    * Added setting of DataTime value on websocket DataEvent updates
+    * Added mapping of XBT to BTC for websocket SharedSymbol formatting
+    * Fix Mono runtime exception on rest client construction using DI
+  * Updated Kucoin.Net from version 5.23.5 to version 5.24.0
+    * Added support for more SharedKlineInterval values
+    * Added setting of DataTime value on websocket DataEvent updates
+    * Fixed incorrect enum value for FeeType
+    * Fix Mono runtime exception on rest client construction using DI
+  * Updated Mexc.Net from version 2.0.0 to version 2.1.0
+    * Added support for more SharedKlineInterval values
+    * Added setting of DataTime value on websocket DataEvent updates
+    * Fix Mono runtime exception on rest client construction using DI
+  * Updated OKX.Net from version 2.14.2 to version 2.15.0
+    * Added support for more SharedKlineInterval values
+    * Added setting of DataTime value on websocket DataEvent updates
+    * Added restClient.UnifiedApi.Account.GetSymbolsAsync endpoint
+    * Fixed setting tag parameter in restClient.UnifiedApi.Trading.PlaceOrderAsync
+    * Fix Mono runtime exception on rest client construction using DI
+  * Updated WhiteBit.Net from version 1.3.2 to version 1.4.0
+    * Added support for more SharedKlineInterval values
+    * Added setting of DataTime value on websocket DataEvent updates
+    * Added SelfTradePreventionMode parameter to REST PlaceOrder endpoints, updated Order response model with StpMode and Status properties
+    * Added socketClient.V4Api.SubscribeToAccountMarginPositionEventUpdatesAsync and SubscribeToAccountBorrowEventUpdatesAsync subscriptions
+    * Added TpSl property to WhtieBitPosition model, containing TakeProfit/StopLoss order reference info
+    * Added Role and FeeAsset properties to socketClient.V4Api.SubscribeToUserTradeUpdatesAsync update model
+    * Added restClient.V4Api.Account.GetTradingFeesAsync endpoint
+    * Updated KlineInterval.ThreeMinute to KlineInterval.ThreeMinutes
+    * Fixed socketClient.V4Api.SubscribeToPositionUpdatesAsync UpdateTime being lower case
+    * Fix Mono runtime exception on rest client construction using DI
+  * Updated XT.Net from version 1.1.3 to version 1.2.0
+    * Added support for more SharedKlineInterval values
+    * Added setting of DataTime value on websocket DataEvent updates
+    * Added MinDepositQuantity, DepositConfirmations and WithdrawPrecision properties to restClient.SpotApi.ExchangeData.GetAssetNetworksAsync response model
+    * Fix Mono runtime exception on rest client construction using DI
+
+* Version 2.11.0 - 07 Feb 2025
+  * Added BitMEX support with BitMEX.Net 1.0.0
+  * Updated reference CryptoExchange.Net version from 8.6.1 to 8.7.3
+    * Added GetMillisecondTimestampLong helper method to AuthenticationProvider
+    * Added PriceSignificationFigures to SharedSpotSymbol model
+    * Added Authenticated property to IBaseApiClient interface to check if a client was provided API credentials  
+    * Added support for Flags enum deserialization in System.Text.Json EnumConverter
+    * Added handling of negative number DateTime deserialization to default
+    * Updated SharedSymbol from class to record
+    * Some small fixes in the System.Text.Json ArrayConverter
+    * Fixed issue with serialization of nullable types in System.Text.Json ArrayConverter
+    * Fix for unnecessary error message in logging when closing websocket connection
+  * Updated BingX.Net from version 1.19.1 to version 1.20.1
+    * Added AveragePrice to SpotApi order details model and shared implementation
+    * Added missing TimeInForce parameter for restClient.SpotApi.Trading.PlaceMultipleOrderAsync
+    * Added ContractAddress property to BingXAsset model
+    * Added processPartialSuccess parameter to restClient.SpotApi.Trading.CancelOrdersAsync endpoint
+    * Updated restClient.SpotApi.Trading.CancelOrdersAsync response model so failed cancellations can also be returned
+    * Fixed clientOrderId parameter for restClient.PerpetualFuturesApi.Trading.PlaceOrderAsync endpoint
+  * Updated Bitfinex.Net from version 7.13.1 to version 8.0.2
+    * Added client side ratelimit implementation
+    * Updated library to System.Text.Json from Newtonsoft.Json for json (de)serialization
+    * Updated public websocket subscriptions to use the URI specifically for public data
+    * Updated websocket to use bulk updates for order book updates (configurable)
+    * Updated Enum conversions to use EnumConverter
+    * Fixed deserialization error in BitfinexOrder response model
+  * Updated Bitget.Net from version 1.19.1 to version 1.20.0
+    * Added restClient.SpotApiV2.Trading.CancelReplaceOrderAsync endpoint
+    * Added restClient.SpotApiV2.Trading.CancelReplaceMultipleOrdersAsync endpoint
+    * Added TakeProfit/StopLoss parameters to SpotApiV2 place order endpoints
+    * Fixed restClient.SpotApiV2.Margin.GetIsolatedRiskRateAsync response parsing
+    * Fixed an issue with data not being parsed correctly for certain models
+  * Updated CoinEx.Net from version 7.13.2 to version 7.14.0
+    * Added restClient.SpotApiV2.Account.GetAllDepositWithdrawalConfigsAsync endpoint
+    * Updated SpotApi Shared implementation GetAssetsAsync to also return network info
+  * Updated Kraken.Net from version 5.5.4 to version 5.6.0
+    * Added support for `NewAssetNames` ExchangeParameter in shared implementation symbol and asset requests
+    * Added check for authentication when requesting assets, return only asset names if no credentials provided
+    * Updated restClient.SpotApi.Trading.GetClosedOrdersAsync parameters
+  * Updated Mexc.Net from version 1.15.2 to version 2.0.0
+    * Added client side-ratelimiting implementation
+    * Updated json (de)serializer from Newtonsoft.Json to System.Text.Json
+
+* Version 2.10.0 - 22 Jan 2025
+  * Added HyperLiquid support with HyperLiquid.Net 1.0.1
+  * Updated reference CryptoExchange.Net version from 8.6.0 to 8.6.1
+    * Added GetMillisecondTimestampLong helper method to AuthenticationProvider
+    * Added PriceSignificationFigures to SharedSpotSymbol model
+  * Updated Binance.Net from version 10.16.1 to version 10.16.2
+    * Updated RewardType Enum values
+    * Updated weight of restClient.SpotApi.Account.WithdrawAsync from 600 to 900
+    * Fixed restClient.SpotApi.Account.GetTradeFeeAsync for Us environment
+  * Updated BitMart.Net from version 1.12.1 to version 1.12.2
+    * Added BuyerIsMaker property to socketClient.UsdFuturesApi.SubscribeToTradeUpdatesAsync update model
+    * Added Side to futures API shared interfaces trade subscription
+  * Updated GateIo.Net from version 1.17.1 to version 1.18.0
+    * Added transactionType parameter to restClient.SpotApi.Account.GetTransferHistoryAsync endpoint
+    * Added NumberOfOrders to restClient.PerpetualFuturesApi.ExchangeData.GetLiquidationsAsync response model
+    * Added PreMarketStatus property to restClient.SpotApi.ExchangeData.GetSymbolsAsync response model
+  * Fixed deserialization error in restClient.SpotApi.Account.GetSmallBalanceConversionsAsync
+  * Updated HTX.Net from version 6.8.1 to version 6.8.2
+    * Added restClient.SpotApi.ExchangeData.GetNetworksAsync
+  * Updated Kraken.Net from version 5.5.3 to version 5.5.4
+    * Fixed IAssetsRestClient.GetAssetAsync not marked as authenticated method
+    * Fixed incorrect int values for OneWeek and FifteenDays in KlineInterval enum
+  * Updated Kucoin.Net from version 5.23.4 to version 5.23.5
+    * Fixed restClient.FuturesApi.Account.GetPositionHistoryAsync deserialization error and updated response model
+* Updated Mexc.Net from version 1.15.1 to version 1.15.2
+    * Added restClient.SpotApi.Account.TransferInternalAsync endpoint
+    * Added restClient.SpotApi.Account.GetInternalTransferHistoryAsync endpoint
+  * Updated OKX.Net from version 2.14.1 to version 2.14.2
+    * Added handling of unknown symbol error in websocket subscribe request
+    * Removed deprecated restClient.UnifiedApi.ExchangeData.GetOracleAsync
+
+* Version 2.9.3 - 18 Jan 2025
+  * Updated Bybit.Net from version 4.0.1 to version 4.0.2
+    * Added DepositLimit, DepositType and FromAddress to restClient.V5Api.Account.GetDepositsAsync response model
+    * Added DepositLimit and ContractAddress to restClient.V5Api.Account.GetDepositAddressAsync response model
+    * Added ContractAddress to restClient.V5Api.Account.GetAssetInfoAsync response model
+    * Added TradeId property to restClient.V5Api.Account.GetBrokerEarningsAsync response model
+    * Updated restClient.V5Api.ExchangeData.GetSpotSymbolsAsync PricePercentageFilter response model to new x/y limit value properties
+    * Fixed shared interfaces futures symbols request not returning full data set
+  * Updated Kraken.Net from version 5.5.2 to version 5.5.3
+    * Fixed restClient.FuturesApi.Trading.GetUserTradesAsync startTime parameter not being applied
+  * Updated Kucoin.Net from version 5.23.3 to version 5.23.4
+    * Fixed shared interfaces balance subscription providing updates for all accounts
+
+* Version 2.9.2 - 13 Jan 2025
+  * Updated ExchangeOrderBookFactory to use lower update intervals where available
+  * Updated XT.Net from version 1.1.2 to version 1.1.3 
+    * Various fixes in UsdtFutures trigger/track/stop limit order endpoints
+	
+* Version 2.9.1 - 09 Jan 2025
+  * Updated reference CryptoExchange.Net version from 8.6.0 to 8.6.1
+    * Fixed websocket connection getting stuck after a ping frame timeout
+    * Removed websocket Error callback when exception is expected
+    * Removed unnecessary type restraints on RestApiClient.SendAsync methods
+  * Updated Bybit.Net from version 4.0.0 to version 4.0.1
+    * Fixed AveragePrice being null in BybitPosition and BybitPositionUpdate models
+  * Updated CoinEx.Net from version 7.13.1 to version 7.13.2
+    * Disable ping frames for socket connections as it's not stable
+  * Updated Kucoin.Net from version 5.23.2 to version 5.23.3
+    * Updated Spot Shared IBalanceRestClient GetBalancesAsync implementation to only filter account types if there are both Trade and SpotHf being returned
+  * Updated WhiteBit.Net from version 1.3.1 to version 1.3.2
+    * Disable ping frames for socket connections as it's not stable
+  * Updated XT.Net from version 1.1.1 to version 1.1.2
+    * Fix for restClient.UsdtFuturesApi.ExchangeData.GetSymbolInfoAsync deserialization
+
+* Version 2.9.0 - 07 Jan 2025
+  * Added Type to ExchangeInfo model
+  * Updated reference CryptoExchange.Net version from 8.5.0 to 8.6.0
+    * Added support for passing weight to apply to an individual ratelimit guard
+    * Added IFeeRestClient to service registration
+    * Added response headers parameter to RestApiClient.TryParseError method
+    * Added check for ServerRateLimitError on RestApiClient.TryParseError response
+    * Added ExchangeType Enum
+    * Some small improvements
+  * Updated Binance.Net from version 10.15.0 to version 10.16.1
+    * Added PriceMatch parameter to UsdFutures order editing
+    * Added support for premium index klines in socketClient.UsdFuturesApi.ExchangeData.SubscribeToKlineUpdatesAsync
+    * Updated ETH history response models
+    * Added Type property to BinanceExchange class
+  * Updated BingX.Net from version 1.19.0 to version 1.19.1
+    * Added Type property to BingXExchange class
+  * Updated Bitfinex.Net from version 7.13.0 to version 7.13.1
+    * Added Type property to BitfinexExchange class
+  * Updated Bitget.Net from version 1.19.0 to version 1.19.1
+    * Added Type property to BitgetExchange class
+  * Updated BitMart.Net from version 1.12.0 to version 1.12.1
+    * Added Type property to BitMartExchange class
+  * Updated Bybit.Net from version 3.19.0 to version 4.0.0
+    * Updated from Newtonsoft.Json to System.Text.Json
+    * Added CryptoLoan endpoints
+    * Added client side ratelimiting
+    * Added Type property to BybitExchange class
+    * Added RiskParameters properties to restClient.V5Api.ExchangeData.GetLinearInverseSymbolsAsync response model
+    * Updated CryptoExchange.Net version
+    * Updated some namespaces
+    * Fixed restClient.V5Api.SubAccount.EditSubAccountApiKeyAsync parameters not getting send
+    * Removed deprecated V1/V2/V3 endpoints, models and enums
+  * Updated Coinbase.Net from version 1.7.0 to version 1.7.2
+    * Updated transaction model to include fee and quantity info
+    * Added Type property to CoinbaseExchange class
+  * Updated CoinEx.Net from version 7.13.0 to version 7.13.1
+    * Added Type property to CoinEx class
+  * Updated CoinGecko.Net from version 3.3.0 to version 3.3.1
+  * Updated CryptoCom.Net from version 1.5.0 to version 1.5.1
+    * Added Type property to CryptoComExchange class
+  * Updated GateIo.Net from version 1.16.0 to version 1.17.1
+    * Added restClient.SpotApi.Account.GetInsuranceFundHistoryAsync endpoint
+    * Added SingleAsset enum value for restClient.SpotApi.Account.SetUnifiedAccountModeAsync
+    * Added Type property to GateIoExchange class
+    * Updated restClient.SpotApi.Account.GetUnifiedAccountInfoAsync() balance response model
+  * Updated HTX.Net from version 6.8.0 to version 6.8.1
+    * Added Type property to HTXExchange class
+  * Updated Kraken.Net from version 5.5.0 to version 5.5.2
+    * Added Type property to KrakenExchange class
+    * Fixed reconnection bug for query connections without active subscription
+  * Updated Kucoin.Net from version 5.23.0 to version 5.23.2
+    * Added Type property to KucoinExchange class
+    * Fixed incorrect caching of passphrase with multiple credentials
+  * Updated Mexc.Net from version 1.15.0 to version 1.15.1
+    * Added Type property to MexcExchange class
+  * Updated OKX.Net from version 2.14.0 to version 2.14.1
+    * Added Type property to OKXExchange class
+  * Updated WhiteBit.Net from version 1.3.0 to version 1.3.1
+    * Added Type property to WhiteBitExchange class
+  * Updated XT.Net from version 1.1.0 to version 1.1.1
+    * Added Type property to XTExchange class
+
 * Version 2.8.0 - 23 Dec 2024
   * Updated reference CryptoExchange.Net version from 8.4.3 to 8.5.0
     * Added EmptyArrayObjectConverter System.Text.Json JsonConverter

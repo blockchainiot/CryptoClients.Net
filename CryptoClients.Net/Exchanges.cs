@@ -3,14 +3,17 @@ using BingX.Net;
 using Bitfinex.Net;
 using Bitget.Net;
 using BitMart.Net;
+using BitMEX.Net;
 using Bybit.Net;
 using Coinbase.Net;
 using CoinEx.Net;
 using CoinGecko.Net;
 using CryptoCom.Net;
 using CryptoExchange.Net.RateLimiting;
+using DeepCoin.Net;
 using GateIo.Net;
 using HTX.Net;
+using HyperLiquid.Net;
 using Kraken.Net;
 using Kucoin.Net;
 using Mexc.Net;
@@ -35,7 +38,8 @@ namespace CryptoClients.Net
             DisplayName = BinanceExchange.DisplayName,
             ImageUrl = BinanceExchange.ImageUrl,
             Url = BinanceExchange.Url,
-            ApiDocsUrl = BinanceExchange.ApiDocsUrl
+            ApiDocsUrl = BinanceExchange.ApiDocsUrl,
+            Type = BinanceExchange.Type
         };
 
         /// <summary>
@@ -47,7 +51,8 @@ namespace CryptoClients.Net
             DisplayName = BingXExchange.DisplayName,
             ImageUrl = BingXExchange.ImageUrl,
             Url = BingXExchange.Url,
-            ApiDocsUrl = BingXExchange.ApiDocsUrl
+            ApiDocsUrl = BingXExchange.ApiDocsUrl,
+            Type = BingXExchange.Type
         };
 
         /// <summary>
@@ -59,7 +64,8 @@ namespace CryptoClients.Net
             DisplayName = BitfinexExchange.DisplayName,
             ImageUrl = BitfinexExchange.ImageUrl,
             Url = BitfinexExchange.Url,
-            ApiDocsUrl = BitfinexExchange.ApiDocsUrl
+            ApiDocsUrl = BitfinexExchange.ApiDocsUrl,
+            Type = BitfinexExchange.Type
         };
 
         /// <summary>
@@ -71,7 +77,8 @@ namespace CryptoClients.Net
             DisplayName = BitgetExchange.DisplayName,
             ImageUrl = BitgetExchange.ImageUrl,
             Url = BitgetExchange.Url,
-            ApiDocsUrl = BitgetExchange.ApiDocsUrl
+            ApiDocsUrl = BitgetExchange.ApiDocsUrl,
+            Type = BitgetExchange.Type
         };
 
         /// <summary>
@@ -83,7 +90,21 @@ namespace CryptoClients.Net
             DisplayName = BitMartExchange.DisplayName,
             ImageUrl = BitMartExchange.ImageUrl,
             Url = BitMartExchange.Url,
-            ApiDocsUrl = BitMartExchange.ApiDocsUrl
+            ApiDocsUrl = BitMartExchange.ApiDocsUrl,
+            Type = BitMartExchange.Type
+        };
+
+        /// <summary>
+        /// BitMEX exchange info
+        /// </summary>
+        public static ExchangeInfo BitMEX { get; } = new ExchangeInfo
+        {
+            Name = BitMEXExchange.ExchangeName,
+            DisplayName = BitMEXExchange.DisplayName,
+            ImageUrl = BitMEXExchange.ImageUrl,
+            Url = BitMEXExchange.Url,
+            ApiDocsUrl = BitMEXExchange.ApiDocsUrl,
+            Type = BitMEXExchange.Type
         };
 
         /// <summary>
@@ -95,7 +116,8 @@ namespace CryptoClients.Net
             DisplayName = BybitExchange.DisplayName,
             ImageUrl = BybitExchange.ImageUrl,
             Url = BybitExchange.Url,
-            ApiDocsUrl = BybitExchange.ApiDocsUrl
+            ApiDocsUrl = BybitExchange.ApiDocsUrl,
+            Type = BybitExchange.Type
         };
 
         /// <summary>
@@ -107,7 +129,8 @@ namespace CryptoClients.Net
             DisplayName = CoinbaseExchange.DisplayName,
             ImageUrl = CoinbaseExchange.ImageUrl,
             Url = CoinbaseExchange.Url,
-            ApiDocsUrl = CoinbaseExchange.ApiDocsUrl
+            ApiDocsUrl = CoinbaseExchange.ApiDocsUrl,
+            Type = CoinbaseExchange.Type
         };
 
         /// <summary>
@@ -119,7 +142,8 @@ namespace CryptoClients.Net
             DisplayName = CoinExExchange.DisplayName,
             ImageUrl = CoinExExchange.ImageUrl,
             Url = CoinExExchange.Url,
-            ApiDocsUrl = CoinExExchange.ApiDocsUrl
+            ApiDocsUrl = CoinExExchange.ApiDocsUrl,
+            Type = CoinExExchange.Type
         };
 
         /// <summary>
@@ -131,7 +155,21 @@ namespace CryptoClients.Net
             DisplayName = CryptoComExchange.DisplayName,
             ImageUrl = CryptoComExchange.ImageUrl,
             Url = CryptoComExchange.Url,
-            ApiDocsUrl = CryptoComExchange.ApiDocsUrl
+            ApiDocsUrl = CryptoComExchange.ApiDocsUrl,
+            Type = CryptoComExchange.Type
+        };
+
+        /// <summary>
+        /// DeepCoin exchange info
+        /// </summary>
+        public static ExchangeInfo DeepCoin { get; } = new ExchangeInfo
+        {
+            Name = DeepCoinExchange.ExchangeName,
+            DisplayName = DeepCoinExchange.DisplayName,
+            ImageUrl = DeepCoinExchange.ImageUrl,
+            Url = DeepCoinExchange.Url,
+            ApiDocsUrl = DeepCoinExchange.ApiDocsUrl,
+            Type = DeepCoinExchange.Type
         };
 
         /// <summary>
@@ -143,7 +181,8 @@ namespace CryptoClients.Net
             DisplayName = GateIoExchange.DisplayName,
             ImageUrl = GateIoExchange.ImageUrl,
             Url = GateIoExchange.Url,
-            ApiDocsUrl = GateIoExchange.ApiDocsUrl
+            ApiDocsUrl = GateIoExchange.ApiDocsUrl,
+            Type = GateIoExchange.Type
         };
 
         /// <summary>
@@ -155,7 +194,21 @@ namespace CryptoClients.Net
             DisplayName = HTXExchange.DisplayName,
             ImageUrl = HTXExchange.ImageUrl,
             Url = HTXExchange.Url,
-            ApiDocsUrl = HTXExchange.ApiDocsUrl
+            ApiDocsUrl = HTXExchange.ApiDocsUrl,
+            Type = HTXExchange.Type
+        };
+
+        /// <summary>
+        /// HyperLiquid exchange info
+        /// </summary>
+        public static ExchangeInfo HyperLiquid { get; } = new ExchangeInfo
+        {
+            Name = HyperLiquidExchange.ExchangeName,
+            DisplayName = HyperLiquidExchange.DisplayName,
+            ImageUrl = HyperLiquidExchange.ImageUrl,
+            Url = HyperLiquidExchange.Url,
+            ApiDocsUrl = HyperLiquidExchange.ApiDocsUrl,
+            Type = HyperLiquidExchange.Type
         };
 
         /// <summary>
@@ -167,7 +220,8 @@ namespace CryptoClients.Net
             DisplayName = KrakenExchange.DisplayName,
             ImageUrl = KrakenExchange.ImageUrl,
             Url = KrakenExchange.Url,
-            ApiDocsUrl = KrakenExchange.ApiDocsUrl
+            ApiDocsUrl = KrakenExchange.ApiDocsUrl,
+            Type = KrakenExchange.Type
         };
 
         /// <summary>
@@ -179,7 +233,8 @@ namespace CryptoClients.Net
             DisplayName = KucoinExchange.DisplayName,
             ImageUrl = KucoinExchange.ImageUrl,
             Url = KucoinExchange.Url,
-            ApiDocsUrl = KucoinExchange.ApiDocsUrl
+            ApiDocsUrl = KucoinExchange.ApiDocsUrl,
+            Type = KucoinExchange.Type
         };
 
         /// <summary>
@@ -191,7 +246,8 @@ namespace CryptoClients.Net
             DisplayName = MexcExchange.DisplayName,
             ImageUrl = MexcExchange.ImageUrl,
             Url = MexcExchange.Url,
-            ApiDocsUrl = MexcExchange.ApiDocsUrl
+            ApiDocsUrl = MexcExchange.ApiDocsUrl,
+            Type = MexcExchange.Type
         };
 
         /// <summary>
@@ -203,7 +259,8 @@ namespace CryptoClients.Net
             DisplayName = OKXExchange.DisplayName,
             ImageUrl = OKXExchange.ImageUrl,
             Url = OKXExchange.Url,
-            ApiDocsUrl = OKXExchange.ApiDocsUrl
+            ApiDocsUrl = OKXExchange.ApiDocsUrl,
+            Type = OKXExchange.Type
         };
 
         /// <summary>
@@ -215,7 +272,8 @@ namespace CryptoClients.Net
             DisplayName = WhiteBitExchange.DisplayName,
             ImageUrl = WhiteBitExchange.ImageUrl,
             Url = WhiteBitExchange.Url,
-            ApiDocsUrl = WhiteBitExchange.ApiDocsUrl
+            ApiDocsUrl = WhiteBitExchange.ApiDocsUrl,
+            Type = WhiteBitExchange.Type
         };
 
         /// <summary>
@@ -227,7 +285,8 @@ namespace CryptoClients.Net
             DisplayName = XTExchange.DisplayName,
             ImageUrl = XTExchange.ImageUrl,
             Url = XTExchange.Url,
-            ApiDocsUrl = XTExchange.ApiDocsUrl
+            ApiDocsUrl = XTExchange.ApiDocsUrl,
+            Type = XTExchange.Type
         };
 
         /// <summary>
@@ -240,12 +299,15 @@ namespace CryptoClients.Net
             Bitfinex,
             Bitget,
             BitMart,
+            BitMEX,
             Bybit,
             Coinbase,
             CoinEx,
             CryptoCom,
+            DeepCoin,
             GateIo,
             HTX,
+            HyperLiquid,
             Kucoin,
             Kraken,
             Mexc,
@@ -263,13 +325,18 @@ namespace CryptoClients.Net
             {
                 BinanceExchange.RateLimiter.RateLimitTriggered += value;
                 BingXExchange.RateLimiter.RateLimitTriggered += value;
+                BitfinexExchange.RateLimiter.RateLimitTriggered += value;
                 BitgetExchange.RateLimiter.RateLimitTriggered += value;
                 BitMartExchange.RateLimiter.RateLimitTriggered += value;
+                BitMEXExchange.RateLimiter.RateLimitTriggered += value;
+                BybitExchange.RateLimiter.RateLimitTriggered += value;
                 CoinbaseExchange.RateLimiter.RateLimitTriggered += value;
                 CoinGeckoApi.RateLimiter.RateLimitTriggered += value;
                 CryptoComExchange.RateLimiter.RateLimitTriggered += value;
+                DeepCoinExchange.RateLimiter.RateLimitTriggered += value;
                 GateIoExchange.RateLimiter.RateLimitTriggered += value;
                 HTXExchange.RateLimiter.RateLimitTriggered += value;
+                HyperLiquidExchange.RateLimiter.RateLimitTriggered += value;
                 KrakenExchange.RateLimiter.RateLimitTriggered += value;
                 KucoinExchange.RateLimiter.RateLimitTriggered += value;
                 MexcExchange.RateLimiter.RateLimitTriggered += value;
@@ -281,13 +348,18 @@ namespace CryptoClients.Net
             {
                 BinanceExchange.RateLimiter.RateLimitTriggered -= value;
                 BingXExchange.RateLimiter.RateLimitTriggered -= value;
+                BitfinexExchange.RateLimiter.RateLimitTriggered -= value;
                 BitgetExchange.RateLimiter.RateLimitTriggered -= value;
                 BitMartExchange.RateLimiter.RateLimitTriggered -= value;
+                BitMEXExchange.RateLimiter.RateLimitTriggered -= value;
+                BybitExchange.RateLimiter.RateLimitTriggered -= value;
                 CoinbaseExchange.RateLimiter.RateLimitTriggered -= value;
                 CoinGeckoApi.RateLimiter.RateLimitTriggered -= value;
                 CryptoComExchange.RateLimiter.RateLimitTriggered -= value;
+                DeepCoinExchange.RateLimiter.RateLimitTriggered -= value;
                 GateIoExchange.RateLimiter.RateLimitTriggered -= value;
                 HTXExchange.RateLimiter.RateLimitTriggered -= value;
+                HyperLiquidExchange.RateLimiter.RateLimitTriggered -= value;
                 KrakenExchange.RateLimiter.RateLimitTriggered -= value;
                 KucoinExchange.RateLimiter.RateLimitTriggered -= value;
                 MexcExchange.RateLimiter.RateLimitTriggered -= value;

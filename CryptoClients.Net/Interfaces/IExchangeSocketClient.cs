@@ -3,14 +3,17 @@ using BingX.Net.Interfaces.Clients;
 using Bitfinex.Net.Interfaces.Clients;
 using Bitget.Net.Interfaces.Clients;
 using BitMart.Net.Interfaces.Clients;
+using BitMEX.Net.Interfaces.Clients;
 using Bybit.Net.Interfaces.Clients;
 using Coinbase.Net.Interfaces.Clients;
 using CoinEx.Net.Interfaces.Clients;
 using CryptoCom.Net.Interfaces.Clients;
 using CryptoExchange.Net.Objects.Sockets;
 using CryptoExchange.Net.SharedApis;
+using DeepCoin.Net.Interfaces.Clients;
 using GateIo.Net.Interfaces.Clients;
 using HTX.Net.Interfaces.Clients;
+using HyperLiquid.Net.Interfaces.Clients;
 using Kraken.Net.Interfaces.Clients;
 using Kucoin.Net.Interfaces.Clients;
 using Mexc.Net.Interfaces.Clients;
@@ -50,6 +53,10 @@ namespace CryptoClients.Net.Interfaces
         /// </summary>
         IBitMartSocketClient BitMart { get; }
         /// <summary>
+        /// BitMEX Websocket API
+        /// </summary>
+        IBitMEXSocketClient BitMEX { get; }
+        /// <summary>
         /// Bybit Websocket API
         /// </summary>
         IBybitSocketClient Bybit { get; }
@@ -66,6 +73,10 @@ namespace CryptoClients.Net.Interfaces
         /// </summary>
         ICryptoComSocketClient CryptoCom { get; }
         /// <summary>
+        /// DeepCoin Websocket API
+        /// </summary>
+        IDeepCoinSocketClient DeepCoin { get; }
+        /// <summary>
         /// Gate.io Websocket API
         /// </summary>
         IGateIoSocketClient GateIo { get; }
@@ -73,6 +84,10 @@ namespace CryptoClients.Net.Interfaces
         /// HTX Websocket API
         /// </summary>
         IHTXSocketClient HTX { get; }
+        /// <summary>
+        /// HyperLiquid Websocket API
+        /// </summary>
+        IHyperLiquidSocketClient HyperLiquid { get; }
         /// <summary>
         /// Kraken Websocket API
         /// </summary>
@@ -106,6 +121,14 @@ namespace CryptoClients.Net.Interfaces
         /// <param name="apiSecret">API secret</param>
         /// <param name="apiPass">API passphrase</param>
         void SetApiCredentials(string exchange, string apiKey, string apiSecret, string? apiPass = null);
+
+        /// <summary>
+        /// Return the exchange symbol name
+        /// </summary>
+        /// <param name="exchange">Exchange</param>
+        /// <param name="symbol">Symbol</param>
+        /// <returns></returns>
+        string? GetSymbolName(string exchange, SharedSymbol symbol);
 
         /// <summary>
         /// Get all ISharedClient Socket Api interfaces supported for the specified exchange

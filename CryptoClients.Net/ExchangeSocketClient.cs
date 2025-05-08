@@ -15,6 +15,9 @@ using BitMart.Net.Clients;
 using BitMart.Net.Interfaces.Clients;
 using BitMart.Net.Objects;
 using BitMart.Net.Objects.Options;
+using BitMEX.Net.Clients;
+using BitMEX.Net.Interfaces.Clients;
+using BitMEX.Net.Objects.Options;
 using Bybit.Net.Clients;
 using Bybit.Net.Interfaces.Clients;
 using Bybit.Net.Objects.Options;
@@ -34,12 +37,19 @@ using CryptoExchange.Net.Objects;
 using CryptoExchange.Net.Objects.Options;
 using CryptoExchange.Net.Objects.Sockets;
 using CryptoExchange.Net.SharedApis;
+using DeepCoin.Net.Clients;
+using DeepCoin.Net.Interfaces.Clients;
+using DeepCoin.Net.Objects;
+using DeepCoin.Net.Objects.Options;
 using GateIo.Net.Clients;
 using GateIo.Net.Interfaces.Clients;
 using GateIo.Net.Objects.Options;
 using HTX.Net.Clients;
 using HTX.Net.Interfaces.Clients;
 using HTX.Net.Objects.Options;
+using HyperLiquid.Net.Clients;
+using HyperLiquid.Net.Interfaces.Clients;
+using HyperLiquid.Net.Objects.Options;
 using Kraken.Net.Clients;
 using Kraken.Net.Interfaces.Clients;
 using Kraken.Net.Objects.Options;
@@ -84,6 +94,8 @@ namespace CryptoClients.Net
         /// <inheritdoc />
         public IBitMartSocketClient BitMart { get; }
         /// <inheritdoc />
+        public IBitMEXSocketClient BitMEX { get; }
+        /// <inheritdoc />
         public IBybitSocketClient Bybit { get; }
         /// <inheritdoc />
         public ICoinbaseSocketClient Coinbase { get; }
@@ -92,9 +104,13 @@ namespace CryptoClients.Net
         /// <inheritdoc />
         public ICryptoComSocketClient CryptoCom { get; }
         /// <inheritdoc />
+        public IDeepCoinSocketClient DeepCoin { get; }
+        /// <inheritdoc />
         public IGateIoSocketClient GateIo { get; }
         /// <inheritdoc />
         public IHTXSocketClient HTX { get; }
+        /// <inheritdoc />
+        public IHyperLiquidSocketClient HyperLiquid { get; }
         /// <inheritdoc />
         public IKrakenSocketClient Kraken { get; }
         /// <inheritdoc />
@@ -193,12 +209,15 @@ namespace CryptoClients.Net
             Bitfinex = new BitfinexSocketClient();
             Bitget = new BitgetSocketClient();
             BitMart = new BitMartSocketClient();
+            BitMEX = new BitMEXSocketClient();
             Bybit = new BybitSocketClient();
             Coinbase = new CoinbaseSocketClient();
             CoinEx = new CoinExSocketClient();
             CryptoCom = new CryptoComSocketClient();
+            DeepCoin = new DeepCoinSocketClient();
             GateIo = new GateIoSocketClient();
             HTX = new HTXSocketClient();
+            HyperLiquid = new HyperLiquidSocketClient();
             Kraken = new KrakenSocketClient();
             Kucoin = new KucoinSocketClient();
             Mexc = new MexcSocketClient();
@@ -219,12 +238,15 @@ namespace CryptoClients.Net
             Action<BitfinexSocketOptions>? bitfinexSocketOptions = null,
             Action<BitgetSocketOptions>? bitgetSocketOptions = null,
             Action<BitMartSocketOptions>? bitMartSocketOptions = null,
+            Action<BitMEXSocketOptions>? bitMEXSocketOptions = null,
             Action<BybitSocketOptions>? bybitSocketOptions = null,
             Action<CoinExSocketOptions>? coinExSocketOptions = null,
             Action<CoinbaseSocketOptions>? coinbaseSocketOptions = null,
             Action<CryptoComSocketOptions>? cryptoComSocketOptions = null,
+            Action<DeepCoinSocketOptions>? deepCoinSocketOptions = null,
             Action<GateIoSocketOptions>? gateIoSocketOptions = null,
             Action<HTXSocketOptions>? htxSocketOptions = null,
+            Action<HyperLiquidSocketOptions>? hyperLiquidSocketOptions = null,
             Action<KrakenSocketOptions>? krakenSocketOptions = null,
             Action<KucoinSocketOptions>? kucoinSocketOptions = null,
             Action<MexcSocketOptions>? mexcSocketOptions = null,
@@ -261,12 +283,15 @@ namespace CryptoClients.Net
                 bitfinexSocketOptions = SetGlobalSocketOptions(global, bitfinexSocketOptions, credentials?.Bitfinex);
                 bitgetSocketOptions = SetGlobalSocketOptions(global, bitgetSocketOptions, credentials?.Bitget);
                 bitMartSocketOptions = SetGlobalSocketOptions(global, bitMartSocketOptions, credentials?.BitMart);
+                bitMEXSocketOptions = SetGlobalSocketOptions(global, bitMEXSocketOptions, credentials?.BitMEX);
                 bybitSocketOptions = SetGlobalSocketOptions(global, bybitSocketOptions, credentials?.Bybit);
                 coinbaseSocketOptions = SetGlobalSocketOptions(global, coinbaseSocketOptions, credentials?.Coinbase);
                 coinExSocketOptions = SetGlobalSocketOptions(global, coinExSocketOptions, credentials?.CoinEx);
                 cryptoComSocketOptions = SetGlobalSocketOptions(global, cryptoComSocketOptions, credentials?.CryptoCom);
+                deepCoinSocketOptions = SetGlobalSocketOptions(global, deepCoinSocketOptions, credentials?.DeepCoin);
                 gateIoSocketOptions = SetGlobalSocketOptions(global, gateIoSocketOptions, credentials?.GateIo);
                 htxSocketOptions = SetGlobalSocketOptions(global, htxSocketOptions, credentials?.HTX);
+                hyperLiquidSocketOptions = SetGlobalSocketOptions(global, hyperLiquidSocketOptions, credentials?.HyperLiquid);
                 krakenSocketOptions = SetGlobalSocketOptions(global, krakenSocketOptions, credentials?.Kraken);
                 kucoinSocketOptions = SetGlobalSocketOptions(global, kucoinSocketOptions, credentials?.Kucoin);
                 mexcSocketOptions = SetGlobalSocketOptions(global, mexcSocketOptions, credentials?.Mexc);
@@ -280,11 +305,14 @@ namespace CryptoClients.Net
             Bitfinex = new BitfinexSocketClient(bitfinexSocketOptions ?? new Action<BitfinexSocketOptions>((x) => { }));
             Bitget = new BitgetSocketClient(bitgetSocketOptions ?? new Action<BitgetSocketOptions>((x) => { }));
             BitMart = new BitMartSocketClient(bitMartSocketOptions ?? new Action<BitMartSocketOptions>((x) => { }));
+            BitMEX = new BitMEXSocketClient(bitMEXSocketOptions ?? new Action<BitMEXSocketOptions>((x) => { }));
             Bybit = new BybitSocketClient(bybitSocketOptions ?? new Action<BybitSocketOptions>((x) => { }));
             Coinbase = new CoinbaseSocketClient(coinbaseSocketOptions ?? new Action<CoinbaseSocketOptions>((x) => { }));
             CoinEx = new CoinExSocketClient(coinExSocketOptions ?? new Action<CoinExSocketOptions>((x) => { }));
             HTX = new HTXSocketClient(htxSocketOptions ?? new Action<HTXSocketOptions>((x) => { }));
+            HyperLiquid = new HyperLiquidSocketClient(hyperLiquidSocketOptions ?? new Action<HyperLiquidSocketOptions>((x) => { }));
             CryptoCom = new CryptoComSocketClient(cryptoComSocketOptions ?? new Action<CryptoComSocketOptions>((x) => { }));
+            DeepCoin = new DeepCoinSocketClient(deepCoinSocketOptions ?? new Action<DeepCoinSocketOptions>((x) => { }));
             GateIo = new GateIoSocketClient(gateIoSocketOptions ?? new Action<GateIoSocketOptions>((x) => { }));
             Kraken = new KrakenSocketClient(krakenSocketOptions ?? new Action<KrakenSocketOptions>((x) => { }));
             Kucoin = new KucoinSocketClient(kucoinSocketOptions ?? new Action<KucoinSocketOptions>((x) => { }));
@@ -305,12 +333,15 @@ namespace CryptoClients.Net
             IBitfinexSocketClient bitfinex,
             IBitgetSocketClient bitget,
             IBitMartSocketClient bitMart,
+            IBitMEXSocketClient bitMEX,
             IBybitSocketClient bybit,
             ICoinbaseSocketClient coinbase,
             ICoinExSocketClient coinEx,
             ICryptoComSocketClient cryptoCom,
+            IDeepCoinSocketClient deepCoin,
             IGateIoSocketClient gateIo,
             IHTXSocketClient htx,
+            IHyperLiquidSocketClient hyperLiquid,
             IKrakenSocketClient kraken,
             IKucoinSocketClient kucoin,
             IMexcSocketClient mexc,
@@ -323,12 +354,15 @@ namespace CryptoClients.Net
             Bitfinex = bitfinex;
             Bitget = bitget;
             BitMart = bitMart;
+            BitMEX = bitMEX;
             Bybit = bybit;
             Coinbase = coinbase;
             CoinEx = coinEx;
             CryptoCom = cryptoCom;
+            DeepCoin = deepCoin;
             GateIo = gateIo;
             HTX = htx;
+            HyperLiquid = hyperLiquid;
             Kraken = kraken;
             Kucoin = kucoin;
             Mexc = mexc;
@@ -353,6 +387,7 @@ namespace CryptoClients.Net
                 Bitget.FuturesApiV2.SharedClient,
                 BitMart.SpotApi.SharedClient,
                 BitMart.UsdFuturesApi.SharedClient,
+                BitMEX.ExchangeApi.SharedClient,
                 Bybit.V5InverseApi.SharedClient,
                 Bybit.V5LinearApi.SharedClient,
                 Bybit.V5PrivateApi.SharedClient,
@@ -361,10 +396,13 @@ namespace CryptoClients.Net
                 CoinEx.SpotApiV2.SharedClient,
                 CoinEx.FuturesApi.SharedClient,
                 CryptoCom.ExchangeApi.SharedClient,
+                DeepCoin.ExchangeApi.SharedClient,
                 GateIo.SpotApi.SharedClient,
                 GateIo.PerpetualFuturesApi.SharedClient,
                 HTX.SpotApi.SharedClient,
                 HTX.UsdtFuturesApi.SharedClient,
+                HyperLiquid.SpotApi.SharedClient,
+                HyperLiquid.FuturesApi.SharedClient,
                 Kraken.SpotApi.SharedClient,
                 Kraken.FuturesApi.SharedClient,
                 Kucoin.SpotApi.SharedClient,
@@ -396,12 +434,15 @@ namespace CryptoClients.Net
                 case "Bitfinex": Bitfinex.SetApiCredentials(new ApiCredentials(apiKey, apiSecret)); break;
                 case "Bitget": Bitget.SetApiCredentials(new BitgetApiCredentials(apiKey, apiSecret, apiPass ?? throw new ArgumentException("ApiPass required for Bitget credentials", nameof(apiPass)))); break;
                 case "BitMart": BitMart.SetApiCredentials(new BitMartApiCredentials(apiKey, apiSecret, apiPass ?? throw new ArgumentException("ApiPass required for BitMart credentials", nameof(apiPass)))); break;
+                case "BitMEX": BitMEX.SetApiCredentials(new ApiCredentials(apiKey, apiSecret)); break;
                 case "Bybit": Bybit.SetApiCredentials(new ApiCredentials(apiKey, apiSecret)); break;
                 case "Coinbase": Coinbase.SetApiCredentials(new ApiCredentials(apiKey, apiSecret)); break;
                 case "CoinEx": CoinEx.SetApiCredentials(new ApiCredentials(apiKey, apiSecret)); break;
                 case "CryptoCom": CryptoCom.SetApiCredentials(new ApiCredentials(apiKey, apiSecret)); break;
+                case "DeepCoin": DeepCoin.SetApiCredentials(new DeepCoinApiCredentials(apiKey, apiSecret, apiPass ?? throw new ArgumentException("ApiPass required for DeepCoin credentials", nameof(apiPass)))); break;
                 case "GateIo": GateIo.SetApiCredentials(new ApiCredentials(apiKey, apiSecret)); break;
                 case "HTX": HTX.SetApiCredentials(new ApiCredentials(apiKey, apiSecret)); break;
+                case "HyperLiquid": HyperLiquid.SetApiCredentials(new ApiCredentials(apiKey, apiSecret)); break;
                 case "Kraken": Kraken.SetApiCredentials(new ApiCredentials(apiKey, apiSecret)); break;
                 case "Kucoin": Kucoin.SetApiCredentials(new KucoinApiCredentials(apiKey, apiSecret, apiPass ?? throw new ArgumentException("ApiPass required for Kucoin credentials", nameof(apiPass)))); break;
                 case "Mexc": Mexc.SetApiCredentials(new ApiCredentials(apiKey, apiSecret)); break;
@@ -410,6 +451,16 @@ namespace CryptoClients.Net
                 case "XT": XT.SetApiCredentials(new ApiCredentials(apiKey, apiSecret)); break;
                 default: throw new ArgumentException("Exchange not recognized", nameof(exchange));
             }
+        }
+
+        /// <inheritdoc />
+        public string? GetSymbolName(string exchange, SharedSymbol symbol)
+        {
+            var client = _sharedClients.FirstOrDefault(x => x.Exchange == exchange && x.SupportedTradingModes.Contains(symbol.TradingMode));
+            if (client == null)
+                return null;
+
+            return symbol.GetSymbol(client.FormatSymbol);
         }
 
         #region Subscribe All Ticker
@@ -611,8 +662,10 @@ namespace CryptoClients.Net
                 Coinbase.UnsubscribeAllAsync(),
                 CoinEx.UnsubscribeAllAsync(),
                 CryptoCom.UnsubscribeAllAsync(),
+                DeepCoin.UnsubscribeAllAsync(),
                 GateIo.UnsubscribeAllAsync(),
                 HTX.UnsubscribeAllAsync(),
+                HyperLiquid.UnsubscribeAllAsync(),
                 Kraken.UnsubscribeAllAsync(),
                 Kucoin.UnsubscribeAllAsync(),
                 Mexc.UnsubscribeAllAsync(),
